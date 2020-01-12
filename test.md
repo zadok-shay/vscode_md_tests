@@ -29,9 +29,14 @@ set samples 50
 set style data points
 
 plot [-10:10] sin(x),atan(x),cos(atan(x))
-```
 
-## import tests
+```
+## import pie chart
+
+@import "images/piechart.svg"
+@import "images/piechart.png"
+
+## import sin
 
 import svg
 @import "images/sin.svg"
