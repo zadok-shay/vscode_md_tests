@@ -2,7 +2,7 @@
 
 
 $DATABLOCK << EOD  
-label       100
+"label"       100
 label2      450
 "bar label" 75
 X 75
