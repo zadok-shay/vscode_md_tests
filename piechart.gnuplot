@@ -2,12 +2,21 @@
 
 filename = './resource/piechart.csv'
 
+$DATABLOCK << EOD  
+name,age
+A,20
+B,30
+C,90
+D,100
+EEEEEE,100
+EOD  
+
 rowi = 1
 rowf = 30
 
 # obtain sum(column(2)) from rows `rowi` to `rowf`
 set datafile separator ','
-stats filename u 2 every ::rowi::rowf noout prefix "A"
+stats $DATABLOCK u 2 every ::rowi::rowf noout prefix "A"
 
 # rowf should not be greater than length of file
 rowf = (rowf-rowi > A_records - 1 ? A_records + rowi - 1 : rowf)
@@ -47,12 +56,12 @@ colour = 0          # init colour
 
 set terminal svg
 set output 'images/piechart.svg'
-plot filename u (centerX):(centerY):(radius):(pos):(pos=pos+angle($2)):(colour=colour+1) every ::rowi::rowf w circle lc var,\
+plot $DATABLOCK u (centerX):(centerY):(radius):(pos):(pos=pos+angle($2)):(colour=colour+1) every ::rowi::rowf w circle lc var,\
      for [i=0:rowf-rowi] '+' u (xpos):(ypos(i)) w p pt 5 ps 4 lc i+1,\
-     for [i=0:rowf-rowi] filename u (xpos):(ypos(i)):(sprintf('%2.1f%%, %s, %s', percentage($2), stringcolumn(2), stringcolumn(1))) every ::i+rowi::i+rowi w labels left offset 3,0
+     for [i=0:rowf-rowi] $DATABLOCK u (xpos):(ypos(i)):(sprintf('%2.1f%%, %s, %s', percentage($2), stringcolumn(2), stringcolumn(1))) every ::i+rowi::i+rowi w labels left offset 3,0
 
 set terminal png
 set output 'images/piechart.png'
-plot filename u (centerX):(centerY):(radius):(pos):(pos=pos+angle($2)):(colour=colour+1) every ::rowi::rowf w circle lc var,\
+plot $DATABLOCK u (centerX):(centerY):(radius):(pos):(pos=pos+angle($2)):(colour=colour+1) every ::rowi::rowf w circle lc var,\
      for [i=0:rowf-rowi] '+' u (xpos):(ypos(i)) w p pt 5 ps 4 lc i+1,\
-     for [i=0:rowf-rowi] filename u (xpos):(ypos(i)):(sprintf('%05.2f%% %s', percentage($2), stringcolumn(1))) every ::i+rowi::i+rowi w labels left offset 3,0
+     for [i=0:rowf-rowi] $DATABLOCK u (xpos):(ypos(i)):(sprintf('%05.2f%% %s', percentage($2), stringcolumn(1))) every ::i+rowi::i+rowi w labels left offset 3,0

@@ -47,7 +47,7 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
-	<g id="gnuplot_plot_1" ><title>filename u (centerX):(centerY):(radius):(pos):(pos=pos+angle($2)):(colour=colour+1) every ::rowi::rowf</title>
+	<g id="gnuplot_plot_1" ><title>$DATABLOCK u (centerX):(centerY):(radius):(pos):(pos=pos+angle($2)):(colour=colour+1) every ::rowi::rowf</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g stroke='none' shape-rendering='crispEdges'>
 		<polygon fill = 'rgb(148,   0, 211)' points = '390.3,240.0 390.0,230.4 389.2,220.7 388.0,211.1 386.2,201.6 384.0,192.2 381.2,182.9 377.8,173.3 205.5,240.0 '/>
@@ -606,35 +606,35 @@
 	<use xlink:href='#gpPt4' transform='translate(482.6,240.0) scale(18.00)' color='rgb(240, 228,  66)'/>
 </g>
 	</g>
-	<g id="gnuplot_plot_7" ><title>filename u (xpos):(ypos(i)):(sprintf('%2.1f%%, %s, %s', percentage($2), stringcolumn(2), stringcolumn(1))) every ::i+rowi::i+rowi</title>
+	<g id="gnuplot_plot_7" ><title>$DATABLOCK u (xpos):(ypos(i)):(sprintf('%2.1f%%, %s, %s', percentage($2), stringcolumn(2), stringcolumn(1))) every ::i+rowi::i+rowi</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(507.5,69.0)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
 		<text><tspan font-family="Arial" >5.9%, 20, A</tspan></text>
 	</g>
 </g>
 	</g>
-	<g id="gnuplot_plot_8" ><title>filename u (xpos):(ypos(i)):(sprintf('%2.1f%%, %s, %s', percentage($2), stringcolumn(2), stringcolumn(1))) every ::i+rowi::i+rowi</title>
+	<g id="gnuplot_plot_8" ><title>$DATABLOCK u (xpos):(ypos(i)):(sprintf('%2.1f%%, %s, %s', percentage($2), stringcolumn(2), stringcolumn(1))) every ::i+rowi::i+rowi</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(507.5,112.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
 		<text><tspan font-family="Arial" >8.8%, 30, B</tspan></text>
 	</g>
 </g>
 	</g>
-	<g id="gnuplot_plot_9" ><title>filename u (xpos):(ypos(i)):(sprintf('%2.1f%%, %s, %s', percentage($2), stringcolumn(2), stringcolumn(1))) every ::i+rowi::i+rowi</title>
+	<g id="gnuplot_plot_9" ><title>$DATABLOCK u (xpos):(ypos(i)):(sprintf('%2.1f%%, %s, %s', percentage($2), stringcolumn(2), stringcolumn(1))) every ::i+rowi::i+rowi</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(507.5,156.8)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
 		<text><tspan font-family="Arial" >26.5%, 90, C</tspan></text>
 	</g>
 </g>
 	</g>
-	<g id="gnuplot_plot_10" ><title>filename u (xpos):(ypos(i)):(sprintf('%2.1f%%, %s, %s', percentage($2), stringcolumn(2), stringcolumn(1))) every ::i+rowi::i+rowi</title>
+	<g id="gnuplot_plot_10" ><title>$DATABLOCK u (xpos):(ypos(i)):(sprintf('%2.1f%%, %s, %s', percentage($2), stringcolumn(2), stringcolumn(1))) every ::i+rowi::i+rowi</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(507.5,200.7)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
 		<text><tspan font-family="Arial" >29.4%, 100, D</tspan></text>
 	</g>
 </g>
 	</g>
-	<g id="gnuplot_plot_11" ><title>filename u (xpos):(ypos(i)):(sprintf('%2.1f%%, %s, %s', percentage($2), stringcolumn(2), stringcolumn(1))) every ::i+rowi::i+rowi</title>
+	<g id="gnuplot_plot_11" ><title>$DATABLOCK u (xpos):(ypos(i)):(sprintf('%2.1f%%, %s, %s', percentage($2), stringcolumn(2), stringcolumn(1))) every ::i+rowi::i+rowi</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(507.5,244.5)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
 		<text><tspan font-family="Arial" >29.4%, 100, EEEEEE</tspan></text>

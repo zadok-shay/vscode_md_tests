@@ -31,6 +31,12 @@ set style data points
 plot [-10:10] sin(x),atan(x),cos(atan(x))
 
 ```
+
+## import bar chart
+
+@import "images/barchart.svg"
+@import "images/barchart.png"
+
 ## import pie chart
 
 @import "images/piechart.svg"
